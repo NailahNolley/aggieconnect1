@@ -5,8 +5,40 @@
   <link rel="stylesheet" href="css/style.css">
   <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
  <style>
+ @font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGNbE_oMaV8t2eFeISPpzbdE.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Source Sans Pro Light Italic'), local('SourceSansPro-LightIt'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6GGomRtBD2u8FwSY4jjlmeA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoMzNrcjQuD0pTu1za2FULaMs.woff) format('woff');
+}
+@font-face{
+	font-family: 'BodoniBold';
+	font-style: normal;
+	src: local('BodoniBold');
+}
+
 	body{
 		background-color: #84d2ff;
+		font-family: sans-serif;/*'Source Sans Pro',"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+	font-weight: 200;
 	}
 	.login h1 {
 		
@@ -31,7 +63,40 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
-  
+	input[type="text"],input[type="password"] {
+	  display: block;
+	  margin: 0;
+	  width: 100%;
+	  font-family: sans-serif;
+	  font-size: 18px;
+	  appearance: none;
+	  box-shadow: none;
+	  padding: 10px;
+	  border: none;
+	  border-bottom: solid 2px #c9c9c9;
+	  transition: border 0.3s;
+	}
+	input[type="text"]:focus,input[type="password"]:focus {
+	  outline: none;
+	  border-bottom: solid 2px #969696;
+	}
+	input[type="submit"] {
+		appearance: none;
+		display: block;
+		border: none;
+		font-family: sans-serif;
+		font-size: 25px;
+		border-radius: 10px;
+		height: 36px;
+		width:100%;
+		box-shadow: none;
+		background-color: #84d2ff;
+		color: #FFF;
+		
+	}
+	.login-help {
+		font-size: 12px;
+	}
  </style>
   
   </head>
@@ -40,8 +105,8 @@
 		<div class="login">
 			<h1>Aggie Connect</h1>
 			<form method="post" action="indexaa.html">
-				<p><input type="text" name="login" value="" placeholder="Username or Email"></p>
-				<p><input type="password" name="password" value="" placeholder="Password"></p>
+				<p><input class=".style-4" type="text" name="login" value="" placeholder="Username or Email"></p>
+				<p><input class=".style-4" type="password" name="password" value="" placeholder="Password"></p>
 				<p class="remember_me">
 					<label>
 						<input type="checkbox" name="remember_me" id="remember_me">

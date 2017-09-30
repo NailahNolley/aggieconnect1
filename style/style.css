@@ -138,11 +138,12 @@ img {
 .notifications {
 	padding: 50px;
 	font-size: 20px;
-	background: #84d2ff;
+	background: #F8F8F8;
 	border-radius: 5px;
-	color: white;
+	color: black;
+	
 }
-.notifiction {
-	padding: 30px 30px;
+td, th {
+	padding: 10px 30px;
 }
 
