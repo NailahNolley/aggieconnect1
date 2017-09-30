@@ -133,8 +133,16 @@ img {
 	font-size: 18px;
 }
 
+
+
 .notifications {
-	padding: 30px;
-	
+	padding: 50px;
+	font-size: 20px;
+	background: #84d2ff;
+	border-radius: 5px;
+	color: white;
+}
+.notifiction {
+	padding: 30px 30px;
 }
 
