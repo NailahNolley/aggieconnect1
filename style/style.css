@@ -135,7 +135,7 @@ img {
 
 
 
-.notifications {
+.notifications, .submissions {
 	padding: 50px;
 	font-size: 20px;
 	background: #F8F8F8;
