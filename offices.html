@@ -8,102 +8,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin Sans">
-	<style>
-	h4 {
-		font-size:20px;
-		text-align: center;
-		letter-spacing: 5px;
-	}
-	h5 {
-		/*padding-left: 30px;*/
-		text-align: center;
-		font-size: 18px;
-		/*font-family: 'Josefin Sans', 'Brandon Grotesque', sans-serif;*/
-
-	}
-
-	p {
-		text-align: justify;
-		font-size: 16px;
-		color: #000000;
-		/*font-family: 'Josefin Sans', 'Brandon Grotesque', sans-serif;*/
-		letter-spacing: .5px; 
-	}
-
-	hr {
-		border-top: 3px double #000000;
-	}
-
-	.navbar-default .navbar-nav>li>a {
-		color: #FFF;
-	}
-	.navbar-default .navbar-nav>li>a:hover {
-		color: #F00;
-		animation: 5s;
-	}
-
-	a {
-		color: #000000;
-	}
-
-
-	a:hover {
-		opacity: 0.5;
-		text-decoration: underline;
-	}
-
-	body {
-		font-family: 'Brandon Grotesque', sans-serif;
-	}
-
-	/*img:hover {
-		opacity: 0.5;
-	}*/
-
-	img {
-		/*width:100%;*/
-		height:400px;
-		float:center;
-	}
-
-	.icons {
-		padding-left:15%;
-	}
-
-	.navbar {
-		padding-top: .5%;
-		padding-bottom: .5%;
-		border: 0;
-		background: #84d2ff;
-		border-radius: 0;
-		margin-bottom: 0;
-		font-size: 14px;
-		color: #000000;
-		letter-spacing: 3px; 
-		padding-left: 10px;
-	}
-
-	.navbarsubclass {
-		/*padding-left: 170px;*/
-	}
-
-	.navbar li {
-		padding-left: 15px;
-	}
-
-	.icons .container {
-    	/*padding: 80px 120px;*/
-    	padding-top: 12%;
-	}
-
-	.navbar li:hover {
-		text-decoration: underline;
-		color: #000000;
-		text-align: center;
-	}
-
-	/* Add a dark background color with a little bit see-through */ 
-	</style>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
 
 	</head>
 	
@@ -134,9 +39,9 @@
 
 		<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:20%">
   			<h3 class="w3-bar-item">Menu</h3>
-  			<a href="#" class="w3-bar-item w3-button">The Office of the Registrar</a>
-  			<a href="#" class="w3-bar-item w3-button">Financial Aid Office</a>
-  			<a href="#" class="w3-bar-item w3-button">The Treasurer's Office</a>
+  			<a href="#" class="w3-bar-item w3-button" onclick="a1()">The Office of the Registrar</a>
+  			<a href="#" class="w3-bar-item w3-button" onclick="a2()">Financial Aid Office</a>
+  			<a href="#" class="w3-bar-item w3-button" onclick="a3()">The Treasurer's Office</a>
 		</div>
 
 		<div style="margin-left:25%; margin-right: 10%">
@@ -149,15 +54,38 @@
 	    		<h4>Aggie Connect</h4>
 	      <!-- <hr style = "color: #363636"> -->
 	      		<br>
+				<h4 id="o_title">Hi</h4>
+				<br />
 	      		<h5>
-	      		<p>List all of the offices here so that when someone clicks on an office, it leads them to a page with more specified information and updates on forms that have recently been processed.
+	      		<p id="o_descript">List all of the offices here so that when someone clicks on an office, it leads them to a page with more specified information and updates on forms that have recently been processed.
 	      		</p>
 	      		</h5>
 	    	</div>
 	    </div>
 	    </div>
+		
+		<script>
+			console.log("hi");
+			var title = document.getElementById("o_title");
+			var magic = document.getElementById("o_descript");
+			
+			function a1(){
+				console.log("supboi");
+				title.innerHTML = "The Office of the Registrar:";
+				magic.innerHTML = "The Office of the Registrar provides an array of services to students, faculty, administration, staff and the general public.  Some of these services include: issuing official transcripts, preparing and disseminating the academic calendar and the final examination schedule, processing undergraduate readmission applications, certifying degrees of undergraduate students ensuring the successful completion of all requirements for graduation, and enforcing the Family Educational Rights and Privacy Act.";
+			}
+			function a2(){
+				title.innerHTML = "The Treasurer’s Office:"
+				magic.innerHTML = "The Treasurer’s Office aims to make it possible for you to obtain important information about tuition and fee costs as well as related account information. The Treasurer’s office provides information regarding the following matters: tuition and fees, e-billing, payment plans, student refunds, book allowance/parking permits, payment methods, convenience fee, 1098Ts, Faculty & Staff Tuition Waivers, Treasurer’s Employee Contact Information.";
+			}
+			function a3(){
+				title.innerHTML = "The Office of Financial Aid:";
+				magic.innerHTML = "The Office of Financial Aid aims to assist students in paying for the costs of college education. There are four main types of financial aid. A student is offered a combination of aid from these four programs: grants, loans, scholarships, and work-study."
+			}
+		</script>
+		
 	</body>
 
 
 
-</html>
+</html
